@@ -1,0 +1,142 @@
+.top{
+  border-top:solid 5px #a12c2f;
+}
+.nav-link{
+  font-weight: bold;
+}
+.header-info {
+  overflow: hidden;
+  border-bottom: 1px solid #f2f5f6;
+text-align: right;
+}
+.header-info ul{
+margin:0;
+padding:0;
+}
+.header-info ul li {
+display: inline-block;
+color: #777777;
+font-family: 'Roboto', sans-serif;
+font-size: 12px;
+letter-spacing: 0.1px;
+font-weight: bold;
+padding-left: 15px;
+margin-right: 10px;
+border-left: 1px solid #d4dee1;
+}
+.header-info ul li a:link,.header-info ul li a:visited{
+  color:#a12c2f;
+}
+.header-info ul li i {
+margin:0 5px;
+}
+.header-info ul li:first-child,.header-info ul li:last-child {
+border-left: none;
+}
+.header-info ul li:last-child a {
+background-color: #a12c2f;
+padding: 15px 20px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px;
+text-transform: uppercase;
+color: #ffffff;
+letter-spacing: 2px;
+display: inline-block;
+}
+.inner{
+  padding:75px 0;
+  background:orange url("../images/inner.webp") center center;
+}
+.breadcrumb{
+	background: none !important;
+}
+
+.inner h2{
+  text-align: center;
+}
+.inner breadcrumb{
+  text-align: center;
+}
+.breadcrumb-item a:link,.breadcrumb-item a:visited{
+	color:#a12c2f;
+	font-weight:bold;
+}
+
+.footer{
+	/*background: #292929 url('../images/slide1.jpg') no-repeat;*/
+  background: #292929;
+	background-size: cover;
+	padding-top:70px;
+}
+.footer h4{
+	color:#FFF;
+	text-transform: uppercase;
+	margin-bottom:20px;
+	text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+	text-align: center;
+}
+.footer p{
+	color:#FFF;
+}
+.footer p strong{
+	color:#FF9D3C;
+}
+.footer a:link, footer a:visited{
+	color:#FFF !important;
+	text-decoration: none;
+	transition: all 1s;
+}
+.footer a:hover{
+	color:#FFBBBC;
+}
+.fmenu ul{
+	list-style: none;
+	margin-left:50px;
+	padding: 0;
+}
+.fmenu ul li{
+	transition: all 1s ease;
+}
+.fmenu ul li:hover{
+	transform: translateX(15px);
+}
+.fmenu ul li a:link,.footer ul li a:visited{
+	color:#FFC48A !important;
+	text-decoration:none;
+}
+
+.footer-bottom{
+	background: #000;
+	padding:10px 0;
+	margin-top:10px;
+}
+.visitor p{
+  text-align:center;
+}
+.social{
+  text-align: center;
+}
+
+.social .fa{
+  color:#FFF;
+  padding:10px;
+  width:40px;
+  height:40px;
+  border:solid 1px #FFF;
+  margin:0 10px;
+  transition: all 2s;
+}
+.social .fa-facebook:hover{
+  background: #3a5a97;
+}
+.social .fa-twitter:hover{
+  background: #2ac6f6;
+}
+.social .fa-youtube:hover{
+  background: #e32c28;
+}
+.social .fa-linkedin:hover{
+  background: #0283c7;
+}
+
+ 
