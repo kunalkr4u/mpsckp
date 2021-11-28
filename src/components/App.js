@@ -1,17 +1,17 @@
-import React from 'react';
-import Menu from './Menu';
-import Footer from './Footer';
-import './App.css';
+import React from "react";
+import Menu from "./Menu";
+import Footer from "./Footer";
+import "./App.css";
 
 function App() {
   return (
-    <header className="top">
-			
-					<Menu />
-					
-		<Footer />
-	</header>
-	
+    <div>
+      <header className="top"></header>
+      <section>
+        <Menu />
+      </section>
+      <Footer />
+    </div>
   );
 }
 

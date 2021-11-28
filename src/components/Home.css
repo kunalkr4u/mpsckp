@@ -2,7 +2,7 @@
   color: #882427;
 }
 .boxarea{
-    background:#a12c2f linear-gradient(90deg,#a12c2f,#882427);
+    background:#a12c2f linear-gradient(to top,maroon,rgb(155, 5, 5),maroon);
     padding:70px 0;
   }
   .box{
@@ -160,6 +160,7 @@
   .about p{
     text-align: justify;
   }
+  
   .mps{
     background:#e98500;
     padding:75px 25px;

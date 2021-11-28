@@ -31,7 +31,9 @@ class GetNotice extends React.Component {
     componentDidMount() {
       this.getNotices();
     }
-  
+    viewEmployee(id){
+      this.props.history.push(`/view-employee/${id}`);
+  }
     render() {
       const { isLoading, data } = this.state;
       Moment.locale('en');
@@ -40,7 +42,7 @@ class GetNotice extends React.Component {
           <div>
             {!isLoading ? (
               data.map(notice => {
-                const { title,date } = notice;
+                const { id,title,date } = notice;
                 return (
                   <Container>
                     <Row className="noticerow" key={title}>
@@ -48,7 +50,7 @@ class GetNotice extends React.Component {
                       <p className="calendar">{Moment(date).format('DD')}<em>{Moment(date).format('MMMM')}</em></p>
                     </Col>
                     <Col>
-                      <p>{title}</p>
+                      <p><a href={ () => this.viewEmployee(id)}>{title}</a></p>
                     </Col>
                     <hr />
                   

@@ -83,7 +83,7 @@ const Home=()=>{
                 <Col md={8}>
                     <Row>
                         <Col md={4}>
-                            <a href="https://www.mpsckp.com/pdf/oasis_2020.pdf">
+                            <a href="./about">
                             <div className="box">
                                 <i className="fa fa-sticky-note fa-3x" aria-hidden="true"></i>
                                 <h4>Mission</h4>
@@ -92,7 +92,7 @@ const Home=()=>{
                             </a>
                         </Col>
                         <Col md={4}>
-                            <a href="http://www.mpsckp.com/pdf/annual_report_2019.pdf">
+                            <a href="http://www.mpsckp.com/pdf/annual_report_2019.pdf" target="_blank" rel="noreferrer">
                             <div className="box">
                                 <i className="fa fa-leanpub fa-3x" aria-hidden="true"></i>
                                 <h4>Annual</h4>
@@ -101,7 +101,7 @@ const Home=()=>{
                             </a>
                         </Col>
                         <Col md={4}>
-                            <a href="./pdf/oasis_2020.pdf" target="_blank">
+                            <a href="http://www.mpsckp.com/pdf/oasis_2020.pdf" target="_blank" rel="noreferrer">
                             <div className="box">
                                 <i className="fa fa-book fa-3x" aria-hidden="true"></i>
                                 <h4>OASIS</h4>
@@ -112,7 +112,7 @@ const Home=()=>{
                     </Row>
                     <Row>
                         <Col md={4}>
-                            <a href="https://www.mpsckp.com/pdf/oasis_2020.pdf">
+                            <a href="https://www.mpsckp.com/download_tc.php" target="_blank" rel="noreferrer">
                             <div className="box">
                                 <i className="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i>
                                 <h4>TC/SLC</h4>
@@ -121,7 +121,7 @@ const Home=()=>{
                             </a>
                         </Col>
                         <Col md={4}>
-                            <a href="https://www.mpsckp.com/pdf/oasis_2020.pdf">
+                            <a href="/SchoolInformation">
                             <div className="box">
                                 <i className="fa fa-building fa-3x" aria-hidden="true"></i>
                                 <h4>School</h4>
@@ -130,7 +130,7 @@ const Home=()=>{
                             </a>
                         </Col>
                         <Col md={4}>
-                            <a href="https://www.mpsckp.com/pdf/oasis_2020.pdf">
+                            <a href="/StudentArena">
                             <div className="box">
                                 <i className="fa fa-users fa-3x" aria-hidden="true"></i>
                                 <h4>Student</h4>

@@ -9,6 +9,8 @@ import Result from './Result';
 import Gallery from './Gallery';
 import Vacancy from './Vacancy';
 import Contact from './Contact';
+import SchoolInformation from './SchoolInformation';
+import StudentArena from './StudentArena';
 import logo from '../images/logo.png';
 import {Container,Row,Col} from 'react-bootstrap';
 import {
@@ -17,6 +19,11 @@ import {
 	Route,
 	Link
   } from "react-router-dom";
+
+import { createBrowserHistory } from "history";
+
+const customHistory = createBrowserHistory();
+
   let home="/home";
 const Menu=()=>{
     return(
@@ -24,16 +31,16 @@ const Menu=()=>{
 			<Container>
 			<Row>
                 <Col md={3}>
-                    <Navbar.Brand as={Link} to={"/home"}><img src={logo} alt="logo"/></Navbar.Brand>
+                    <Navbar.Brand as={Link} to={home}><img src={logo} alt="logo"/></Navbar.Brand>
                 </Col>
 				<Col md={9}>
                     <div className="header-info d-none d-sm-none d-md-block hidden-xs">
 								<ul>
 									<li><a href="tel:9955475737"><i className="fa fa-phone-square"></i>+91 9955475737</a></li>
-									<li><a href="https://wa.me/9934534059"><i className="fa fa-whatsapp"></i>+91 9934534059</a></li>
+									<li><a href="https://wa.me/9934534059" target="_blank" rel="noreferrer"><i className="fa fa-whatsapp"></i>+91 9934534059</a></li>
 									<li><a href="mailto:mpsckp@gmail.com"><i className="fa fa-envelope-o"></i>mpsckp@gmail.com</a></li>
 									
-									<li><a href={home}>Admission Open</a></li>
+									<li><a href="http://www.mpsckp.com/online_application.php" target="_blank" rel="noreferrer">Admission Open</a></li>
 								</ul>
 						</div>
 					<Navbar expand="lg">
@@ -58,7 +65,7 @@ const Menu=()=>{
 			</Row>
 		</Container>
         
-		<Container fluid>
+		<div>
 		<Switch>
           <Route path="/home">
             <Home />
@@ -87,12 +94,19 @@ const Menu=()=>{
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/SchoolInformation">
+            <SchoolInformation />
+          </Route>
+          <Route path="/StudentArena">
+            <StudentArena />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
-		</Container>
+		</div>
 		</Router>
+    
     );
 }
 
